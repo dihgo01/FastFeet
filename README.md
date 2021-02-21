@@ -1,5 +1,4 @@
 # FastFeet
-<<<<<<< HEAD
 
 <h2 align="center">
 Esse desafio faz parte do Desafio Final, que é uma aplicação completa (Back-end, Front-end e Mobile) que é avaliada para emissão do Certificado do Bootcamp GoStack.
@@ -127,8 +126,7 @@ _O Expo vai abrir uma página em seu navegador, use o QRcode no seu aplicativo e
 
 ___
 
-By [MicaelliMedeiros](https://www.linkedin.com/in/micaellimedeiros/) :purple_heart:
+By [Diego Candido](www.linkedin.com/in/diego-c-c-s) :purple_heart:
  
 =======
-# FastFeet
->>>>>>> 2d5a6524b8df85b222f790a86b9acec24ef465f8
+
