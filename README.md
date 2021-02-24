@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <h2 align="center">
 Esse desafio faz parte do Desafio Final, que é uma aplicação completa (Back-end, Front-end e Mobile) que é avaliada para emissão do Certificado do Bootcamp GoStack.
@@ -127,3 +128,6 @@ ___
 
 By [MicaelliMedeiros](https://www.linkedin.com/in/micaellimedeiros/) :purple_heart:
  
+=======
+# FastFeet
+>>>>>>> 2d5a6524b8df85b222f790a86b9acec24ef465f8
