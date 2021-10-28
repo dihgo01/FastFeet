@@ -1,5 +1,9 @@
 const jwt =  require('jsonwebtoken');
-require('yup');
+
+const User = require('../model/User');
+const auth = require('../config/authConfig');
+
+const Yup = require('yup');
 
 class SessionController {
     async store (req, res) {
@@ -18,7 +22,7 @@ class SessionController {
         if(!user) {
             return res.status(401).json({ error: 'User not found'})
         }
-        if(!await(user.checkPassword(password))) {
+        if(!(await user.checkPassword(password))) {
             return res.status(401).json({ error: 'Password does not match'})
         }
 
@@ -30,8 +34,8 @@ class SessionController {
                 name,
                 email,
             },
-            token: jwt.sign({ id }, auth.secret, {
-                expiresIn: auth.expiresIn,
+            token: jwt.sign({ id }, auth.key, {
+                expiresIn: auth.time,
             }),
         })
     }

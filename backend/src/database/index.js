@@ -1,10 +1,27 @@
-const Sequelize = require('sequelize');
-const config = require('../config/database');
+import Sequelize from 'sequelize';
 
-const User = require('../model/User')
+import User from '../app/models/User';
+import Recipient from '../app/models/Recipient';
+import File from '../app/models/File';
+import Deliveryman from '../app/models/Deliveryman';
+import Delivery from '../app/models/Delivery';
+import Problem from '../app/models/Problem';
 
-const db = new Sequelize(config);
+import databaseConfig from '../config/database';
 
- User.init(db);
+const models = [User, Recipient, File, Deliveryman, Delivery, Problem];
+class Database {
+  constructor() {
+    this.init();
+  }
 
-module.exports= db;
+  init() {
+    this.connection = new Sequelize(databaseConfig);
+
+    models
+      .map(model => model.init(this.connection))
+      .map(model => model.associate && model.associate(this.connection.models));
+  }
+}
+
+export default new Database();
