@@ -30,8 +30,8 @@ A aplicação em **React Native** é para o entregador visulizar as entregas e t
 4. **Reactotron** rodando na porta 9090 (**Opcional**)
 
 ### :rocket: Começando
-1. ``git clone https://github.com/GustavoBlaze/gobarber.git``
-2. ``cd gobarber``
+1. ``https://github.com/dihgo01/FastFeet.git``
+2. ``cd fastfeet``
 
 ### :rocket: Iniciando com o backend
 1. ``cd backend``
